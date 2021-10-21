@@ -15,7 +15,7 @@ const CallDetails = ({ call_id, onClose, onArchive }) => {
   }, [call_id]);
 
   const handleSubmit = (e) => {
-    //   make call to API for archiving call
+    //   make call to API for archiving calls
     e.preventDefault();
     axios
       .post(`/activities/${call_id}`, { is_archived: !call.is_archived })
