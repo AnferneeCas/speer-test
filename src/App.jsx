@@ -75,7 +75,7 @@ const App = () => {
               </AbsoluteWrapper>
             </Route>
 
-            {/* show feed with archived calls */}
+            {/* show feed with archived callss */}
             <Route path="/all">
               <AbsoluteWrapper>
                 <ActivityFeed
