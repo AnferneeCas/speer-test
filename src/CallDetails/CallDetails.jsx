@@ -25,7 +25,7 @@ const CallDetails = ({ call_id, onClose, onArchive }) => {
   };
   return (
     <div
-      className="bg-white h-100 w-100 p-3"
+      className="bg-white h-100 w-100 p-3 border-grey"
       style={{ zIndex: 3000, minHeight: "500px", minWidth: "376px" }}
     >
       <div className="row">

@@ -66,7 +66,7 @@ const ActivityFeed = ({ feed, onClick }) => {
           {structuredFeed.map((f) => {
             // printing date subset
             return (
-              <React.Fragment>
+              <React.Fragment key={f.id}>
                 <HorizontalDivider
                   text={moment(f.created_at).format("LL")}
                 ></HorizontalDivider>

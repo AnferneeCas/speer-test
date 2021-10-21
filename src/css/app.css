@@ -132,6 +132,10 @@ i {
   font-size: 16px;
 }
 
+.back-drop {
+  left: 0;
+  opacity: 0.5;
+}
 /* utilities */
 
 .border-grey {
@@ -167,4 +171,20 @@ i {
 }
 .text-orange {
   color: #f14a1c;
+}
+a {
+  text-decoration: none;
+  color: #bfbfbe;
+  font-weight: 800;
+}
+a:hover {
+  text-decoration: none;
+  color: #bfbfbe;
+  font-weight: 800;
+}
+
+a:hover :not(.text-orange) {
+  text-decoration: none;
+  color: #f14a1c;
+  font-weight: 800;
 }

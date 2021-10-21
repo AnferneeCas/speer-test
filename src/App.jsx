@@ -16,6 +16,7 @@ import { __RouterContext } from "react-router";
 import AbsoluteWrapper from "./Utilities/AbsoluteWrapper.jsx";
 import CallDetails from "./CallDetails/CallDetails.jsx";
 import LoadingScreen from "./LoadingScreen/LoadingScreen.jsx";
+import Backdrop from "./Utilities/Backdrop.jsx";
 
 const App = () => {
   const [activityFeed, setActivityFeed] = useState([]);
@@ -87,6 +88,8 @@ const App = () => {
           </Switch>
         </animated.div>
       ))}
+
+      {showDetails ? <Backdrop></Backdrop> : null}
 
       {callDetailsTransition((props, item) =>
         item ? (

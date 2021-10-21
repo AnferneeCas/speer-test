@@ -69,16 +69,14 @@ const Header = () => {
         </div>
         <div className="col-8 p-0 header-navigation border-grey ">
           <div className="row d-flex justify-content-center align-items-center h-100 text-center">
-            <div className="col-5 cursor-pointer border-dotted">
-              {" "}
-              <NavLink exact to="/">
+            <div className="col-5 cursor-pointer border-dotted ">
+              <NavLink exact to="/" activeClassName="text-orange">
                 <div>Inbox</div>
               </NavLink>
             </div>
 
             <div className="col-4 cursor-pointer border-dotted">
-              {" "}
-              <NavLink exact to="/all">
+              <NavLink exact to="/all" activeClassName="text-orange">
                 <div>All calls</div>
               </NavLink>
             </div>
